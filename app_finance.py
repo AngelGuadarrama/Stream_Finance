@@ -3,10 +3,10 @@ import streamlit as st
 
 st.write("""
 # Simple Stock Price App
-Shown are the stock closing price and volume of Google!
+Shown are the stock closing price and volume of Tesla!
 """)
 
-tickerSymbol = 'AMZN'
+tickerSymbol = 'TSLA'
 
 tickerData = yf.Ticker(tickerSymbol)
 tickerDf = tickerData.history(period='1d', start='2015-12-31', end='2020-12-31')
