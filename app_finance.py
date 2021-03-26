@@ -16,7 +16,7 @@ start_date = st.sidebar.date_input("Start date", datetime.date(2019, 2, 28))
 end_date = st.sidebar.date_input("End date", datetime.date(2021, 2, 28))
 
 # Retrieving tickers data
-ticker_list = pd.read_csv('https://raw.githubusercontent.com/dataprofessor/s-and-p-500-companies/master/data/constituents_symbols.txt')
+ticker_list = pd.read_csv('https://github.com/AngelGuadarrama/Stream_Finance/blob/main/ipc_symbols.txt')
 tickerSymbol = st.sidebar.selectbox('Stock ticker', ticker_list) # Select ticker symbol
 
 ticker_periods= ['1d','5d','1mo','3mo','6mo','1y','2y','5y','10y','ytd','max']
